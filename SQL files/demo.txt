@@ -1,0 +1,25 @@
+create table articles
+(
+art_id int IDENTITY(1,1) PRIMARY KEY,
+admin_name nvarchar (100)not null,
+art_name nvarchar(100)not null,
+art_athr nvarchar(50)not null,
+art_date date ,
+art_cat varchar(100)not null,
+article text not null,
+)
+create table favs
+(
+art_name nvarchar(100)not null,
+fav_state char(1)not null,
+admin_name nvarchar(100) not null
+)
+
+UPDATE favs
+SET fav_state = 'f', admin_name ='none'
+WHERE art_name = 'article test 90' 
+
+select * from favs where art_name like  'article test 20'
+select * from articles where art_name like  ''
+
+article test 10

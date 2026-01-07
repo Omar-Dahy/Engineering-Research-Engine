@@ -1,0 +1,20 @@
+create database demo_books
+
+create table articles
+(
+art_id int IDENTITY(1,1) PRIMARY KEY,
+art_name nvarchar(100)not null,
+art_athr nvarchar(50)not null,
+art_date date ,
+art_cat varchar(100)not null,
+article text not null,
+)
+
+select * from articles where art_name = 'Creativity Is a Process, Not an Event'
+
+insert into articles (art_name,art_athr,art_date,art_cat,article)
+values ('For a More Creative Brain Follow These 5 Steps',
+		'James Clear',
+		'2005-08-25',
+		'CREATIVITY ,PRODUCTIVITY',
+		'')

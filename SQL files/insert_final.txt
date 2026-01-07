@@ -1,0 +1,162 @@
+
+=========================================================================================================================
+
+
+
+-- insert languege code
+insert into Languege(Languege_Name) VALUES 
+('English'),('French'),('Spanish'),
+('Turkish'),('Italian');
+select * from Languege
+-- insert category code
+insert into Category(Category_name) VALUES ('Chemical Engineering'),('Civil Engineering'),
+('Electrical Engineering'),('Mechanical Engineering'),('Aerospace Engineering'),
+('Agricultural Engineering'),('Biomedical Engineering'),('Computer Hardware Engineering'),
+('others');
+select * from Category
+insert into Doctor_Readers (FirstName,LastName,Mobile,email) VALUES 
+('hend','ahmed',01287455699,'hendahmed@gmail.com'),
+('ghada','mohammed',01158669874,'ghadamo@gmail.com'),
+('ali','ashraf',01023259987,'a_ashraf@hotmail.com'),
+('karim','elsayed',01158669874,'karim@gmail.com'),
+('tasneem','waleed',01256694522,'tasneem_waleed@gmail.com'),
+('jo','merza',01522897465,'joo2000@gmail.com'),
+('taher','ali',01255874663,'taher_ali6@yahoo.com'),
+('amira','badr',01022369885,'mera_badr@gmail.com'),
+('heba','elsayed',012255698744,'heba2020@gmail.com'),
+('manal','bakry',01074955770,'manalbakry@gmail.com'),
+('habib','ahmed',01158669874,'habib_ahmed@hotmail.com'),
+('aya','amr',01122363555,'aya455@yahoo.com'),
+('diaa','eid',01255411202,'diaa771@yahoo.com'),
+('fareda','nabeh',01025639966,'fareda_n@gmail.com'),
+('mostafa','zayed',01566985544,'mostafaz@yahoo.com'),
+('rania','hesham',01552699855,'r_hesham@gmial.com'),
+('tarek','karam',01025369877,'tarek336@yahoo.com'),
+('elsayed','ali',01278965436,'elsayedali@yahoo.com'),
+('laila','mahmoud',01547784123,'laila_mahmoud@gmail.com'),
+('mariam','kord',01255117896,'mariamk@hotmail.com'),
+('amr','ghanem',01266398541,'amr_gh@yahoo.com'),
+('ahmed','saber',01288569314,'a_saber@yahoo.com'),
+('alaa','samy',01023669852,'alaa88@yahoo.com'),
+('amal','kamel',01544693215,'amalkamel@gmail.com'),
+('omnia','eisa',01223663211,'omniaeisa@yahoo.com'),
+('feryal','mahmoud',01144203699,'f_mahmoud1@yahoo.com'),
+('mohammed','salah',01074112555,'mo_salah@yahoo.com'),
+('mona','mosaad',01166332585,'monamosaad@hotmail.com'),
+('eman','elfar',01166985211,'eman2011@yahoo.com'),
+('khaled','hassan',01255123669,'khaled_hassan@yahoo.com')
+
+insert into Account (Account_name,ReaderID) VALUES 
+('hend_ahmed88',1),
+('ghada11_mohammed',1),
+('ali33_ashraf',2),
+('karim_66elsayed',3),
+('tasneem_waleed',4),
+('jo11_merza',5),
+('taher33_ali',6),
+('amira_badr66',7),
+('heba_elsayed',8),
+('manal_bakry',9),
+('habib_ahmed',10),
+('aya_amr',11),
+('diaa_eid22',13),
+('fareda_nabeh22',14),
+('mostafa_zayed13',15),
+('rania_hesham11',16),
+('tarek13_karam',17),
+('elsayed_ali11',18),
+('11laila_mahmoud22',19),
+('22mariam_kord13',20),
+('amr_ghanem22',21),
+('ahmed_saber',22),
+('alaa_samy',23),
+('amal_kamel',24),
+('omnia_eisa',25),
+('feryal_mahmoud',26),
+('mohammed_salah',27),
+('mona_mosaad',28),
+('eman_elfar',29),
+('khaled_hassan',30)
+select * from Account
+
+insert into category_definition(category_difinition) VALUES 
+(''),
+(''),
+(''),
+(''),
+(''),
+('Agricultural engineering, also known as agricultural and biosystems engineering, is the field of study and application of engineering science and designs principles for agriculture purposes'),
+('Biomedical engineering (BME) or medical engineering is the application of engineering principles and design concepts to medicine and biology for healthcare'),
+('Computer engineering (CoE or CpE) is a branch of electrical engineering and computer science that integrates several fields of computer science and electronic engineering required to develop computer hardware and software.')
+('others');
+
+
+insert into Author(FirstName,LastName,CategoryID) VALUES 
+('Klaus' 'Müller',3),
+('Ion',' Stoica',3),
+('Dacheng','Tao',3),
+('Christos','Faloutsos',3),
+('Joe','Gray',3),
+('Eric','Horvit',3),
+('Christos','Faloutsos',3),
+('Javier','Ernesto',1),
+('Alejandro','Baeza',1),
+('Rene','Ruvalcaba',1),
+('Jun','Ye',2),
+('Rui','Yong',2),
+('Derek ','Wright',2),
+
+
+--https://www.researchgate.net/profile/Rui-Yong
+--https://www.researchgate.net/profile/Jun-Ye-16
+--https://www.researchgate.net/profile/Rene-Ruvalcaba
+--https://www.researchgate.net/profile/Alejandro-Baeza-5
+--https://www.researchgate.net/profile/Javier-Ernesto-Vilaso-Cadre-2
+--https://www.researchgate.net/profile/Derek-Wright
+
+-- insert Research_Articles code
+
+-- insert Research_Articles code
+insert into Research_Articles(Research_Name,Research_Date,Research_cost,LanguegeID,CategoryID,AuthorID,ReaderID) VALUES
+--('Dombi Aggregation Operators of Linguistic Neutrosophic Numbers ','2022-1-1',100,1,2,13,5),
+--('Characterization of Joint Roughness Heterogeneity ','2022-2-1',100,1,4,5,5),
+--('Representative sampling method for laboratory testing on shear strength of rock joints ','2022-8-1',180,1,2,13,5),
+--('Developments and Applications of Neutrosophic Theory in Civil Engineering Fields','2021-4-1',120,1,6,13,1)
+--('Novel Distance Measures on Hesitant Fuzzy Sets','2021-3-1',340,1,4,6,2)
+--('Contribution of hyperglycemia‑induced changes in microglia','2021-3-1',340,1,7,11,3)
+--('FACULTAD DE CIENCIAS NATURALES Y EXACTAS DEPARTAMENTO','2021-3-1',430,2,8,10,4)
+--('Study of the potential sweeps in the manual','2021-3-1',220,1,8,10,6)
+--('Semiconductor behavior','2011-6-1',120,1,3,10,7)
+--('Study of the potential sweeps in the manual','2020-3-1',220,1,9,9,8)
+--('Hardware Skills for Hardware Engineers','2022-3-1',110,1,8,7,9)
+--('A Low-Power Ternary CAM With Positive-Feedback','2022-3-1',520,1,4,11,10)
+--('A Low-Power Positive-Feedbacks','2022-3-1',520,1,3,3,13),
+--('Hybrid Latch-Type Offset Tolerant Sense Amplifier for','2022-3-1',520,1,4,12,11),
+--('Sense amplifier offset characterisation and test implications','2022-3-1',220,1,5,6,12)
+--('Complex selective manipulations of thermomagnetic programmable matter','2022-1-1',100,1,3,2,14),
+--('Developments and Applications of Neutrosophic Theory in Civil Engineering Fields: A Review' , '2022-10-1' , 134,1, 2,12,15),
+--( 'Representative sampling method for laboratory testing on shear strength of rock joints ', '2022-8-1 ' ,213  ,1,9 ,13 ,16),
+--( 'Group Decision-Making Model of Renal Cancerthe Environment of Fuzzy Multi-Sets ', ' 2022-12-2' , 211,1,7,12 ,17),
+--( 'Interaction mechanism of the anti-slide pile and sliding mass based on the soil arching effect ', '2021-10-2 ' , 211,1,2,13 ,18),
+--( 'Magnetically Triggered Multidrug Release by Hybrid Mesoporous Silica Nanoparticles ', ' 2012-1-1' , 521 ,1,1 ,10 ,19),
+--( 'Smart Drug Delivery through DNA/Magnetic Nanoparticle Gates ', '2011-2-1 ' , 133,1,1 ,10 ,20),
+--( 'Nanomaterials and Nanostructures Hand-In-Hand with Biology', '2022-7-1 ' ,199 ,1,7 ,10 ,21),
+--( 'Construction and Metrological Characterization of a Minimal Instrumentation Micropolarograph', '2016-10-1 ',260 ,1,1 ,9 ,22),
+--('Contribution of hyperglycemia‑induced changes in microglia to Alzheimer’s disease pathology ','2022-8-1 ',290,1,1 ,11 ,23 ),
+--(' The Ability of Chlorophyll to Trap Carcinogen Aflatoxin B1: A Theoretical Approach','2022-5-1 ',280 ,1,1 ,11 , 24),
+--('Body Biased Sense Amplifier With Auto-Offset Mitigation for Low-Voltage SRAMs ',' 2021-5-1',390,1, 8, 7  ,25 ),
+--('Caution ahead: Navigating risks to freedoms posed by AI ','2021-5-17',100,1, 8,7 ,26 ),
+--('Cooperative AI: machines must learn to find common ground ','2021-5-4',180,1, 8,7 ,27 ),
+--('Tensor decomposition for signal processing and machine learning','2017-4-3 ',240,1,8 ,8 , 28),
+--('A collection of breast cancer cell lines for the study of functionally distinct cancer subtypes ','2006-12-1 ',500,1,7 ,6 ,29 ),
+--('Identifying the best machine learning algorithms','2018-11-5 ',133,1,7 ,4 ,30 ),
+--('A view of cloud computing ','2010-4-1',222,1,8 ,3 ,22 ),
+--('Shape-controlled synthesis of gold and silver nanoparticles ','2002-12-13 ',700,1,1 ,1 ,23 )
+
+
+
+
+
+
+
+

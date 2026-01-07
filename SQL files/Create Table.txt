@@ -1,0 +1,76 @@
+--what you should do
+--1.create tables like languege ,category ,category dif
+--2.create tables like readers, account
+--3.author attributes should be fname ,lname ,categoryFK
+--
+--
+create database research_articles_final
+use research_articles_final
+
+--create Languege table DONEE
+create table Languege
+(
+LanguegeID int Primary key identity (1,1)not null,
+Languege_Name varchar(50)not null
+)
+
+--create Category table DONEE
+create table Category
+(
+CategoryID int primary key IDENTITY(1,1),
+Category_name varchar(50)
+)
+
+--create category_definition table DONEE
+create table category_definition
+(
+CategoryID int  foreign key  REFERENCES Category(CategoryID),
+category_difinition varchar(1000)
+)
+
+drop table Doctor_Readers
+--create Readers table DONEE
+create table Doctor_Readers
+(
+ReaderID int primary key identity(1,1)not null,
+FirstName nvarchar (100)not null,
+LastName  nvarchar (100)not null,
+Mobile    nvarchar (15),
+email     nvarchar (100)
+)
+
+--drop table Account
+--create Acount table DONEE
+create table Account
+(
+AccountID int primary key IDENTITY(1,1),
+Account_name nvarchar (100)not null,
+ReaderID int  foreign key  REFERENCES Doctor_Readers(ReaderID)
+
+)
+
+--create Author table DONEE
+create table Author
+(
+AuthorID int  primary key not null IDENTITY(1,1),
+FirstName nvarchar (100)not null,
+LastName  nvarchar (100)not null,
+email     nvarchar (100),
+CategoryID int  foreign key  REFERENCES Category(CategoryID)
+
+)
+
+
+--drop table Research_Articles
+--create Books table
+create table Research_Articles
+(
+ResearchID int  primary key not null IDENTITY(1,1),
+Research_Name nvarchar (100)not null,
+Research_date  date not null,
+Research_cost numeric(6,2),
+LanguegeID int  foreign key  REFERENCES Languege(LanguegeID),
+CategoryID int  foreign key  REFERENCES Category(CategoryID),
+AuthorID int  foreign key  REFERENCES Author(AuthorID),
+ReaderID int  foreign key  REFERENCES Doctor_Readers(ReaderID)
+)
