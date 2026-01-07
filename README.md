@@ -51,7 +51,7 @@ The **Engineering Research Engine** allows researchers to browse and search for 
 - Omar Dahy  
 - Loay Elzayat  
 - Mary Ashraf  
-- Salah El Gamacy
+- Salah Algamasy
 
 ---
 
